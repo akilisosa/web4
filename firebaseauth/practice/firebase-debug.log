@@ -1,0 +1,25 @@
+[debug] [2019-03-11T07:59:22.566Z] ----------------------------------------------------------------------
+[debug] [2019-03-11T07:59:22.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-11T07:59:22.569Z] CLI Version:   6.4.0
+[debug] [2019-03-11T07:59:22.569Z] Platform:      win32
+[debug] [2019-03-11T07:59:22.569Z] Node Version:  v8.11.3
+[debug] [2019-03-11T07:59:22.570Z] Time:          Mon Mar 11 2019 01:59:22 GMT-0600 (Mountain Daylight Time)
+[debug] [2019-03-11T07:59:22.570Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-11T07:59:22.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-11T07:59:22.587Z] > authorizing via signed-in user
+[debug] [2019-03-11T07:59:22.588Z] [iam] checking project zeta-bonfire-233620 for permissions ["firebase.projects.get"]
+[debug] [2019-03-11T07:59:22.590Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/zeta-bonfire-233620:testIamPermissions  
+
+[debug] [2019-03-11T07:59:23.048Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-11T07:59:23.050Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/zeta-bonfire-233620  
+ 
+[debug] [2019-03-11T07:59:23.392Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\xampp\htdocs\firebaseauth\practice'...
+[info] 
+[debug] [2019-03-11T07:59:23.397Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1013344262438/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-11T07:59:24.068Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000

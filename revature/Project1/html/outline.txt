@@ -1,0 +1,61 @@
+What the fuck... 
+
+jpa  - 
+merger is update
+get is find 
+
+you put the path in the meta inf path and call it persistance,xml 
+
+the factory i used called a session factory
+emdtitiy manager factory that what this thing is
+
+heynernate xmlthen hibernate implementaition
+
+brgin the trand <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="top" title="Popup title" data-content="Popup content">
+</button>
+
+just for our projects. abswer both questions.
+
+get result lost is thw method that retuns a single <div class="row">
+    
+    update = merge
+
+    for delete. first find then.. remove 
+
+    find = <div class="form-group">
+      <label for="">
+      
+      
+      close conn
+      
+      sprig.
+      
+      hybernate has a primary key.
+      
+      this is you enitity class 
+      
+      a class with entities us pojo whata are the annotations in hybernate
+      reverse  mapping. 
+       </label>
+      <select multiple class="form-control" name="" id="">
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+    </div>
+
+    you need the nane thre query bame abd then wher it return list..
+
+
+    what are the classes that you used in hybernate that you used in hybernate and wht are that
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" name="" id="" type="checkbox" value="
+        
+        first fetch user dao
+        them grab user object then do somethin with set user,"
+        
+         aria-label="Text for screen reader">
+      </label>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+    "complierOptions":{
+        "target": "ES5",
+        "experimentalDecorators":true
+    }
+}
+
+if a decorator class evaluates a function to be not valid what happens?
+in the evaluation phase is it checking if it is a function

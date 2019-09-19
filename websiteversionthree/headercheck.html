@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="shortcut icon" href="sosablack.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD93kuomvc3PTypbrUKyBRqPaj5UGH0KF4",
+    authDomain: "sosa-studios-spider.firebaseapp.com",
+    databaseURL: "https://sosa-studios-spider.firebaseio.com",
+    projectId: "sosa-studios-spider",
+    storageBucket: "",
+    messagingSenderId: "184669899397"
+  };
+  firebase.initializeApp(config);
+</script>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Akili Sosa, Alberto Sosa, ak">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="hubtraffic-domain-validation"  content="b369374f2b771d9f" />
+    <title>Sosa Studios:The Studio</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <!-- Custom styles for this template -->
+
+    <script src="spider/js/fire/main.js"></script>
+      <script src="spider/js/fire/signIn.js"></script>
+    
+
+  </head>
+
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">This is Akili's studio their more personal part of the web. In it you can find some of the services we offer, artwork, and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex d-inline-flex flex-row">
+      <!--what I want everything to be in line with-->
+      <div class="navbar-brand d-inline-flex flex-row">
+           <a href="index.php" >
+              <div class="anim-object active" id="card-object-vf" style="animation: rotate-vert-center 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite normal forwards running;">
+                <img src="images/sosaanimationstudios/logo/sosawhite.svg" width="30" height="30" alt="">
+              </div>
+            </a> 
+            <a href="satellite/index.html" class="d-none d-md-block " style="text-decoration:none; color:white;">
+             <strong style="padding-left:5px"> Sosa Studios</strong>
+            </a>  
+    <!--  </div> -->
+
+    <!--  <div class="d-flex flex-row"> -->
+      <div class="d-inline flex-row justify-content-start" > 
+          <div class="d-inline">
+             <button type="submit" id='btnLogin' onclick="loginPortal()" class="btn btn-secondary mb-2">Login</button>
+          </div>
+
+          <div class="d-inline">
+            <button type="submit" id='btnSignup' onclick="signupPortal()" class="btn btn-secondary mb-2">Signup</button>
+          </div>
+
+        <!--  <div> -->
+                <div class="d-inline">
+                  <button type="submit" id='btnBackwardEmail1' onclick="signupPortalBack()" class="btn d-none btn-secondary mb-2"><-</button>
+                </div>
+
+               
+
+              
+         <!-- </div> -->
+
+  
+
+       <!--   <div> -->
+
+             <!--   <div> -->
+             <div class="d-inline-flex">
+                      <div class="d-inline">
+                          <button type="submit" id='btnBackwardEmail2' onclick="signupEmailBack()" class="btn d-none btn-secondary col-sm-1 mb-2"><</button>
+                      </div>
+
+                      <div class="d-inline">
+                          <input type="email" class="d-none form-control"  id="txtEmail" autocomplete='on'  placeholder="Email...">
+                      </div>
+
+                      <div class="d-inline">
+                       <button type="submit" id='btnForwardEmail1' onclick="signupEmailPass()" class="btn  d-none btn-secondary col-sm-1 mb-2">></button>
+                      </div>
+              </div>
+
+              <div class="d-inline-flex justify-content-start">
+                    <div class="d-inline">
+                        <button type="submit" id='btnBackwardEmail3' onclick="signupEmailPassBack()" class="btn d-none btn-secondary mb-2"><</button>
+                      </div>
+                      
+                      <div class="d-inline">   
+                        <input type="password" id="txtPassword" class="form-control d-none"  autocomplete="off" placeholder="Password">
+                      </div>
+
+                      <div class="d-inline">
+                        <button type="submit" id='btnForwardEmail2'  onclick="signupEmailRegister()" class="btn d-none btn-secondary mb-2">></button>
+                      </div>
+               </div>
+             <!--   </div> -->
+             <div class="d-inline">
+            <button type="submit" id='btnGoogle' class="btn d-none btn-secondary mb-2">Google?</button>
+          </div>
+                <div class="d-inline">
+                  <button type="submit" id='btnEmail' class="btn d-none btn-secondary mb-2">Email?</button>
+                </div>
+          
+         </div>
+             
+        <!--  <div> -->
+
+              
+
+
+
+        </div> 
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+   <!-- i don't know what the fuck this is for -->
+   <div id="user-container">
+        <div hidden id="user-pic"></div>
+        <div hidden id="user-name"></div>
+        <button hidden id="sign-out" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+          Sign-out
+        </button>
+        <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+          <i class="material-icons">account_circle</i>Sign-in with Google
+        </button>
+    
+      </div> <!-- this does not sow anywhere -->
+</header>

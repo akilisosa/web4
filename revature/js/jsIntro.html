@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript intro</title>
+<script src="newJs.js"></script>
+    <script>
+
+        //document = dom gives you access to everything
+    function myFunction(){
+        var element = document.getElementById("demo");
+        element.innerText = "Paragraph changed!";
+    }
+    </script>
+</head>
+
+
+<body>
+
+<p id="demo">JS can change HTML content</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="myExternalFunction()">Try me</button>
+<button type="button" onclick="document.getElementById('demo').innerText='hello'">sup?</button>
+
+<p class="paragraphs">p1</p>
+<p class="paragraphs">p2</p>
+<p class="paragraphs">p3</p>
+<button type="button" onclick="changeParagraphBackground()">Change p tags</button>
+
+
+<pre> Enter your name
+        <input onchange="changeFirstName()" type="text" id="fname"></input>
+    </pre>
+
+    <!-- evnt propgation-->
+
+    <!--Bubbling -->
+<style>
+.eventProp * {
+    margin:10px;
+    border:1px solid blue;
+}
+</style>
+
+
+    <div class="eventProp">
+        <form onclick="alert('form')">FORM
+            <div onclick="alert('div')">DOV
+                <p onclick="alert('p')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, delectus vel laboriosam expedita maiores recusandae fugit? Non quod exercitationem, tempore necessitatibus totam vitae recusandae deleniti voluptatem, labore cupiditate dolore excepturi!</p>
+                <p onclick="event.stopPropagation();">STOP PROPGATION</p>
+            </div>
+        
+        
+        
+        </form>FORM
+    </div>
+
+    <!--capturing -->
+<div class="eventProp">
+    <form>FORM
+        <div>
+            <p>P</p>
+        </div>
+    </form>
+</div>
+
+<div class="eventProp cap">
+    <form class="cap">FORM
+        <div class="cap"> DIV
+            <p class="cap">P</p>
+        </div>
+    </form>
+</div>
+<script>
+    var className = "cap";
+for(let elem of document.querySelectorAll('.cap')){
+//just like a general thing to know about
+
+elem.addEventListener("click", 
+                        function(){
+                            alert(`Capturing: ${elem.tagName}`);
+                        },
+                        true);
+
+}
+    </script>
+
+
+
+</body>
+</html>

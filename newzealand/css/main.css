@@ -1,0 +1,240 @@
+
+main {
+    background-color: black;
+}
+body,html {
+    
+    background-color:black;
+  }
+#headerContainer{
+        float: left;
+        width: 100%;
+        display: block;
+        position: relative;
+        justify-content: right;
+        color:white;
+        background-color:black;   
+}
+
+h1 {
+    color:white;
+    background-color:black;
+   text-align: right;
+    word-wrap: break-word;
+    position: relative;
+        float: center;   
+        right:5%;
+    padding-left: 10%;
+    z-index: 2;
+}
+
+#backgroundGif{
+    background-color: beige;
+}
+
+#spaceship{
+    position: absolute;
+    top: 20vw;
+    right: 60vw;
+
+    
+    animation-name: orbit;
+    animation-duration: 200s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes orbit{
+    0%{
+        top: 14vw;
+        right:30vw;
+    }
+
+    39%{
+        top:15vw;
+        right:120vw;
+    }
+
+    40%{
+        display:none;
+        right:120vw;
+    }
+    41%{
+        display:block;
+        top:10vw;
+        right:-10vw;
+    }
+    45%{
+        top:12vw;
+        right:0vw;
+    }
+    65%{
+        top: 13vw;
+        right:20vw;
+    }
+    100%{
+        top:14vw;
+        right:60vw;
+    }
+}
+
+@keyframes orbitIn{
+    0%{
+        top: 14vw;
+        right:30vw;
+    }
+
+    39%{
+        top:15vw;
+        right:120vw;
+    }
+
+    40%{
+        display:none;
+        right:120vw;
+    }
+    41%{
+        display:block;
+        top:10vw;
+        right:-10vw;
+    }
+    45%{
+        top:12vw;
+        right:0vw;
+    }
+    65%{
+        top: 13vw;
+        right:20vw;
+    }
+    100%{
+        top:14vw;
+        right:60vw;
+    }
+}
+
+#gear{
+    position: absolute;
+    right: 26vw;
+    width: 30vw;
+    height: 30vw;
+    opacity: 0;
+    border-radius: 50%;
+
+}
+
+.brain{
+    top:24vw
+}
+
+.brainIn{
+    top:24vw
+}
+
+
+#gear:hover{
+
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes appear {
+    
+    100% {opacity: 1;}
+  }
+
+#giffy {
+margin:auto;
+width: 100%;
+height: auto;
+}
+
+.sosaStudiosText{
+    margin-left:25vw;
+}
+
+
+@media (max-width: 576px) {
+    .sosaStudiosText{
+        margin-left: 0vw;
+    } 
+    
+    .brain{
+    top: 25%; 
+     }
+
+     .brainIn{
+        top:25%;
+    }
+
+    @keyframes orbit{
+        0%{
+            top: 24vw;
+            right:30vw;
+        }
+    
+        39%{
+            top:25vw;
+            right:120vw;
+        }
+    
+        40%{
+            display:none;
+            right:-10vw;
+        }
+        41%{
+            display:block;
+            top:20vw;
+            right:-10vw;
+        }
+        45%{
+            top:22vw;
+            right:0vw;
+        }
+        65%{
+            top: 23vw;
+            right:20vw;
+        }
+        100%{
+            top:24vw;
+            right:60vw;
+        }
+    }
+    
+    @keyframes orbitIn{
+        0%{
+            top: 24vw;
+            right:30vw;
+        }
+    
+        39%{
+            top:25vw;
+            right:120vw;
+        }
+    
+        40%{
+            display:none;
+            right:-10vw;
+        }
+        41%{
+            display:block;
+            top:20vw;
+            right:-10vw;
+        }
+        45%{
+            top:22vw;
+            right:0vw;
+        }
+        65%{
+            top: 23vw;
+            right:20vw;
+        }
+        100%{
+            top:24vw;
+            right:60vw;
+        }
+    }
+}

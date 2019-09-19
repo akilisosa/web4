@@ -1,0 +1,30 @@
+h1 {
+    text-align:center;
+    padding: 1em;
+    background-color: aliceblue;
+    margin:auto;
+  }
+h1:hover {
+    color: purple;
+}
+p {
+    text-align: center;
+    padding: 1em;
+    background-color: darkcyan;
+    
+}
+
+footer {
+    text-align: center;
+    padding:1em;
+    background-color: rebeccapurple; 
+    font-size: 1em;
+    
+}
+
+.theWholeThing {
+    text-align: center;
+    width:300px;
+    padding:5px;  
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin:auto;}

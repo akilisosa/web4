@@ -1,0 +1,19 @@
+NORMALIZATION
+1. PK the primary key needs to unique
+
+2. The key is the absolute is the key, the key must depend on the primary key
+partial dependenies are bad?
+
+satifie the first normal form plus no partial dependiencies
+
+3. you cannot have any transitive properties, that means basically nothing... 
+
+Service- make service per funtion.
+
+create a user sceme from your project do this animal thing, and other some other shit. 
+
+you need to add the same dependencies from yetsereday. 
+logging level. 
+
+you have to redo the something thing. enable java to read yml. 
+

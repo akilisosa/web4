@@ -1,0 +1,23 @@
+{
+  "name": "Sosa Animation Studios",
+  "version": "3.0.2",
+  "description": "sosa animation studios website",
+  "main": "index.php",
+  "dependencies": {
+    "nodemailer": "^6.0.0",
+    "server": "^1.0.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "a",
+    "quiet",
+    "paitent",
+    "spider",
+    "animation"
+  ],
+  "author": "akili sosa",
+  "license": "MIT"
+}

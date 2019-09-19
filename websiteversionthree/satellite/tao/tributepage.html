@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" href="sosablack.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <title>Tao Te Ching</title>
+    <style>
+        html{
+            background-color:black; 
+        }
+html,body{
+  font-family:"Courier New", Courier, monospace;
+  text-align:center;
+  min-width:100px;
+  color:#333;
+}
+#main{
+  margin:30px auto;
+  padding:15px;
+  border:0px solid;
+  border-radius:5px;
+  background:#eee;
+}
+
+img{
+max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+  filter: blur(.75px);
+  animation-name: fishTurn;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes fishTurn{
+    100%{transform: rotate(360deg)}
+}
+/* The element to apply the animation to */
+#img-div{
+  
+  background-color:hsl(248, 12%, 13%);
+  animation-name: backgroundChange;
+  animation-duration:4s;
+  animation-iteration-count: infinite; 
+  -webkit-animation-name:backgroundChange;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes  backgroundChange {
+  
+   50%{background-color: hsl(248, 12%, 63%);
+    }
+}
+
+#rainbowLink{
+    animation-name:rainbow;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    color:rgb(89, 89, 151);
+}
+
+@keyframes rainbow{
+    33%{
+        color:rgb(204, 204, 150);
+    }   
+    66%{
+        color:rgb(132, 202, 132);
+    }
+    100%{
+        color:rgb(89, 89, 151);
+}
+}
+ul {
+  list-style-position: inside;
+}
+
+footer{
+    color: hsl(248, 12%, 63%);
+    background-color:hsl(182, 25%, 15%);
+}
+        </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Akili Sosa, Alberto Sosa, ak">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Sosa Studios:Tao</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/animation.css">
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">This is Akili's studio their more personal part of the web. In it you can find some of the services we offer, artwork, and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="../index.html" class="navbar-brand d-flex align-items-center">
+        <div class="anim-object active" id="card-object-vf" style="animation: rotate-vert-center 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite normal forwards running;">
+          <img src="../../images/sosaanimationstudios/logo/sosawhite.svg" width="30" height="30" alt="">
+          </div> 
+        <strong style="padding-left:5px"> Life=Struggle</strong>
+      </a>
+    </div>
+  </div>
+</header>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<div id="main">
+<h1 id="title">The Tao</h1>
+<div id="img-div">
+    <div id="image">
+            <img src="../../images/betterfishies.png" alt="Ying Yang Fish">
+    </div>
+
+    <div id="img-caption"><strong>Darkness within darkness.<br>
+           <u></u> The gateway to all understanding.<u></u> </strong>
+           
+
+
+    </div>
+</div>
+<br>
+
+<div id="tribute-info">
+<p>The book of Tao is one of the 5 books of wisdom from china. 
+    <br>Those include:
+    <ul>
+        <li>The Tao de Ching - the book of Philosophy</li>
+        <li>The I Ching - the book of Changes</li>
+        <li>The Shu Jing - the book of History</li>
+        <li>The Shi Jing - the book of Poetry</li>
+        <li>The Liji - the book of Rites</li>
+        <li>The book of song - lost to time</li>
+    </ul>
+</p>
+</div>
+
+<footer>The journey of a thousand miles begins with one step.-Lou Tzu take yours <a id="rainbowLink" href="http://thetaoteching.com/taoteching1.html">here.</a></footer>
+
+
+</div>
+</body>

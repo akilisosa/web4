@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="200px" height="200px" viewBox="0 0 200 200">
+       <title>Image Fill using a Pattern</title>
+       <pattern id="image-fill" width="1" height="1" 
+                viewBox="0 0 800 600"
+                preserveAspectRatio="xMidYMid slice">   <!--1-->
+
+                 <!--The pattern has a width and height of 1, equlivalent to 100% in object bounding -box units.
+              The viewBox is based on the actual dimensions of the jpeg image file: 800x600.
+              A slice option for preserveAspectRatio ensure that the rectangular
+               photograph will completely cover the shape we're painting.
+                 -->
+
+           <image width="800" height="600" 
+                  xlink:href="sosatitle@2x.png" />      <!--2-->
+
+                   <!-- the jpegs dimensions need to prepeated in the width and height of the image element 
+                  (since most browsers don't yet support the SVG 2 autosize option). Since the <image> size
+                    is set to explicity, we don't need to worry about pererving aspect ratio at this step.-->
+
+
+
+
+       </pattern>
+       <symbol viewBox="0 0 20 20" id="club" 
+               style="overflow: visible">
+           <title>Club</title>                          <!--3-->
+
+            <!-- The <symbol> code is directly copied from the sprite file created for example 10-2
+                  in chapter 1-. The visble overflow ow't have an effect in this example but it will when 
+                we use this patttern again with stroked symbols-->
+
+
+           <path d="M9,15.5A5,5 0 1 1 5.5, 7.5 
+                    A5,5 0 1 1 14.5, 7.5A5,5 0 1 1 11, 15.5
+                    Q11,20 13,20H7Q9,20 9,15.5Z" />
+       </symbol>
+       <use xlink:href="#club" fill="url(#image-fill)" /> <!--4-->
+           <!--Because it is a <symbol> and there are no diensios on the <use> 
+                  element the copy will scale to fit the current SVG's dimensions.
+                  A fill presentation attribute assigns the image pattern-->
+
+   </svg>
+
+</body>
+
+</html>

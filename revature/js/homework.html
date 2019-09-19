@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+ 1. Return the nth fibonacci number
+
+ f(0) = 0
+ f(1) = 1
+ f(10) = 55
+*/ 
+
+//this is an object that contains a function
+var homework = {
+   
+    //fibonacci is a property of homework|it has the value of an annoymous function.
+    //does this make this a method? - what the differnce between a method and a function? questions to ask.
+    fibonacci : function(n){
+    //this an array, that wil be used to start the sequence.
+        let arr = [0, 1];
+      //lets sets the counters value at 2
+      //if the value of that number is less than the number of n+1 than we will add one to the counter.
+  for (let i = 2; i < n + 1; i++){
+
+    //if the n=3 then we start with arr[0]+arr[1], which is 1. we then push that value into the array
+    //since i=3 is less than 3+1=4 we do he same thing again and push another value into the array, this time adding 1 and 1 together to make 2
+
+    //if you see someone copy and paste this ask them what number prints out when you get a 5.
+    //you get 5. 5 is the fifth number in the sequence but i was scratching my head about this for a while.
+    arr.push(arr[i - 2] + arr[i -1])
+  }
+ return arr[n] //this returns the value at index[3]
+    }
+};
+//this is the iterative solution
+//in big O notation this comes out to 2n and is a linear function as the size of the list increases the time it takes increases
+
+
+
+//this is the recusrive solution i wil work this out later. 
+function fib(n) {
+  if (n < 2){
+    return n
+  }
+  return fib(n - 1) + fib (n - 2)
+}
+
+
+/*
+ 2. Sort array of integers
+
+ f([2,4,5,1,3,1]) = [1,1,2,3,4,5]
+
+ Don't use the Array sort() method... that would be lame.
+*/
+
+
+
+
+///although this not a problem if you knwoingly want greeter two to be redefined, it becomes a problem when you do not
+//realize that a variable greeterTwo havs already been defined. 
+
+
+/*
+let is preferred for variable declaration
+let is considered blcok scope.
+
+
+if(true){
+  let helloTwo = "say hello";
+  console.log(hellowTwo);
+}
+
+console.log(helloTwo);   //error hello is not defined. 
+
+console.log(helloTwo); //error: hello is not defined
+
+/* this will work
+let greeter Three = "hey hi";
+greeterThree = "hi hey";
+
+
+
+let can be updated but not redeclared.
+let can be updated but not redeclared. 
+
+
+however if some variable is defined in different scopes, 
+//there will be no error. 
+
+
+var can be redeclared. 
+var can be redeclared.
+
+
+why no error?
+both instances are treated as different variables since they have different scopes.
+
+When using let you don't have to bother if you have used a na,e
+for a variable before, as a variable exisits only within its scope
+also since a let variable cannot be declared more than once within a scope
+then the problem discussed earlier that occurs with var does not occur. 
+
+
+
+
+*/
+
+/*
+hoisting of let
+
+just like var, let declarations are hoisted to the top.
+unlike var which is initialized as undefined, the let keyword
+is not initialized so if you try and use a let variable 
+before declaration you'll get a reference error.
+
+*/
+
+//console.log(letGreeter);
+//let letGreeter = 'hello'
+
+
+/*
+
+const 
+
+variables declared with the const maintain const values.
+
+const variables are blocked scope
+
+const variables cannot be updated or redeclared.unless they are arrays.
+
+
+*/
+/*
+
+
+
+
+ 3. Return the factorial of n
+
+ f(0) = 1
+ f(1) = 1
+ f(3) = 6
+*/
+function factorial(n){
+
+  var thingToFactor = n;
+  for (i=thingToFactor; i>0; i--){
+    i= (i*i-1)
+    console.log(i)
+    return i;
+  }
+
+  
+};
+ 
+factorial(6);
+
+
+/*
+ 4. Rotate left
+
+ Given array, rotate left n times and return array
+
+ f([1,2,3,4,5], 1) = [2,3,4,5,1]
+ f([1,2,3,4,5], 6) = [2,3,4,5,1]
+ f([1,2,3,4,5], 3) = [4,5,1,2,3]
+
+*/
+homework.rotateLeft = function(array, n) {
+};
+
+
+/*
+ 5. Balanced Brackets
+
+ A bracket is any one of the following: (, ), {, }, [, or ]
+
+ The following are balanced brackets:
+    ()
+    ()()
+    (())
+    ({[]})
+
+ The following are NOT balanced brackets:
+ (
+ )
+ (()
+ ([)]
+
+ Return true if balanced
+ Return false if not balanced
+*/
+homework.balancedBrackets = function(bracketsString){
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </script>
+</body>
+</html>

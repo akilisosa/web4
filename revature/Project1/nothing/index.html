@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project1</title>
+  <script src="js/loggin/backgroundText.js"></script>
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body id="background">
+  <div id="backgroundFull" class="backgroundFull">
+
+
+
+
+
+    <div class="container">
+
+      <div class="centerAbsolute" id="welcomePage"></div>
+
+      <div class=" centerAbsolute container hide" style="background:white; opacity:.80; padding-bottom: 20px;"
+        id="workPage">
+        <table class="table" id="workTable">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Emp Id</th>
+              <th scope="col">Claim Amount</th>
+              <th scope="col">Claim Desc</th>
+              <th scope="col">Status</th>
+              <th scope="col">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+              <th scope="col">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        <div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">view
+            all claims</button><button style="margin-left:25px;" onclick="goback()" class="btn btn-secondary">go
+            back</button></div>
+      </div>
+
+
+      <div class=" centerAbsolute container hide" style="background:white; opacity:.80; padding-bottom: 20px;"
+      id="riemPage">
+      <table class="table" id="riemTable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Claim Amount</th>
+            <th scope="col">Claim Desc</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">view
+          all claims</button><button style="margin-left:25px;" onclick="goback2()" class="btn btn-secondary">go
+          back</button></div>
+    </div>
+
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">all Claims</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped" id="allClaims">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Emp Id</th>
+                    <th scope="col">Claim Amount</th>
+                    <th scope="col">Claim Desc</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hide centerAbsolute" id="employeeListPage">
+        <div class="card">
+          <h5 class="card-header">Employees</h5>
+          <div class="card-body">
+            <table class="table table-striped" id="employeeTb">
+              <thead>
+                <tr>
+                  <th scope="col">Emp email</th>
+                  <th scope="col">Password</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+            <button onclick="goback3()" class="btn btn-primary">go back</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hide" id="employeeListPage">
+        <div class="card">
+          <h5 class="card-header">Riembursments</h5>
+          <div class="card-body">
+            <table class="table table-striped" id="allClaims">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Claim Amount</th>
+                  <th scope="col">Claim Desc</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="updateInfoPage" style="margin-top: 6%;" class="hide">
+        <div class="card" style="width: 38rem; padding-top:5px;">
+          <div class="form-group">
+            <label for="" id="pfName">Preferred Name:</label>
+            <input type="txt" class="form-control" id="pfNameIn" onkeyup="pfKeyUp()" placeholder="Whatever you want">
+          </div>
+          <div class="form-group">
+            <input type="txt" class="form-control" id="lfName" readonly>
+          </div>
+          <div class="form-group">
+            <input type="txt" class="form-control" id="llName" readonly>
+          </div>
+          <div class="form-group">
+            <label for="" id="street">Street:</label>
+            <input type="text" class="form-control" id="streetIn" onkeyup="addressKeyUp()"
+              placeholder="1234 virginia rd">
+          </div>
+          <div class="form-group">
+            <label for="" id="city">City:</label>
+            <input type="text" class="form-control" id="cityIn" onkeyup="cityKeyUp()" placeholder="Little town">
+          </div>
+          <div class="form-group">
+            <label for="" id="state">State:</label>
+            <input type="text" class="form-control" id="stateIn" onkeyup="stateKeyUp()" placeholder="Texas">
+          </div>
+          <div class="form-group">
+            <label for="" id="zipCode">zipCode:</label>
+            <input type="text" class="form-control" id="zipIn" onkeyup="zipKeyUp()" placeholder="first five plz">
+          </div>
+          <div class="form-group">
+            <label for="extraNotes">Notes:</label><button class="btn btn-primary float-right"
+              style=" margin-right: 30px; margin-bottom: 8px;" onclick="submitInfo()">submit</button><button
+              class="btn btn-secondary float-right" onclick="noChange()"
+              style="margin-right: 38px; margin-bottom: 8px">no change</button>
+            <textarea class="form-control" maxlength="250" id="extraNotes" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="poemDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Email:</span>
+                </div>
+                <input type="text" class="form-control shakes" id="loginEmail" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" required>
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Password:</span>
+                </div>
+                <input type="password" class="form-control shakes" id="loginPass" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="verify()" data-toggle="modal"
+                data-target="#poemDetail" data-backdrop="false">login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--model container-->
+
+
+
+
+
+    </div>
+
+    <div id="poem" data-toggle="modal" data-target="#poemDetail">
+      <p id="backGroundText"></p>
+    </div>
+
+
+
+    <div id="makeRiemPage" class="hide centerAbsolute">
+      <div class="card" id="makeRiemCard" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Make a Claim</h5>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input id="claimAmountIn" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Why</span>
+            </div>
+            <textarea id="claimDescIn" class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div><p>&nbsp;</p></div>
+          <div  class=" btn-toolbar"><button onclick="closeRiemPage()" style="margin-right: 15px;" class="btn btn-secondary">close</button><button onclick="submitClaim()" class="btn btn-primary">submit</button> </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+   
+
+    <div id="signOutBtn" style="display:none;">
+      <form>
+        <button type="submit" value="submit" class="btn btn-lg btn-outline-warning">Sign Out</button>
+      </form>
+    </div>
+
+
+  </div>
+  <!--no divs after this-->
+
+
+
+  <script>
+    (function () {
+      backgroundText();
+    })();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    var userId;
+    var adminlvl;
+    var userName;
+    var legalFirst;
+    var legalLast;
+    var street;
+    var city;
+    var state;
+    var zipCode;
+    var extraNotes;
+    var allClaims;
+    var pendingClaims;
+  </script>
+  <script src="js/generic/ajax.js"></script>
+
+  <script src="js/loggin/verify.js"></script>
+  <script src="js/loggin/loginError.js"></script>
+  <script src="js/loggin/shakeifOff.js"></script>
+  <script src="js/loggin/introSequence.js"></script>
+  <script src="js/loggin/handleUserDeets.js"></script>
+  <script src="js/loggin/welcome.js"></script>
+
+  <script src="js/infoControl/infoButton.js"></script>
+  <script src="js/infoControl/showInfoPage.js"></script>
+  <script src="js/infoControl/inputKeyUp.js"></script>
+  <script src="js/infoControl/noChange.js"></script>
+  <script src="js/infoControl/submitInfo.js"></script>
+
+  <script src="js/adminControls/adminControls.js"></script>
+  <script src="js/adminControls/workButton.js"></script>
+  <script src="js/adminControls/showWorkPage.js"></script>
+
+  <script src="js/adminControls/workPageControls/approve.js"></script>
+  <script src="js/adminControls/workPageControls/deny.js"></script>
+  <script src="js/adminControls/workPageControls/goback.js"></script>
+  <script src="js/adminControls/workPageControls/showAll.js"></script>
+
+
+  <script src="js/adminControls/employeeListButton.js"></script>
+  <script src="js/adminControls/showEmployeeListPage.js"></script>
+
+
+
+  <script src="js/userControls/userControls.js"></script>
+
+  <script src="js/userControls/makeRiem/riemButton.js"></script>
+  <script src="js/userControls/makeRiem/showMakeRiemPage.js"></script>
+  <script src="js/userControls/makeRiem/submitClaim.js"></script>
+  <script src="js/userControls/makeRiem/closeRiemPage.js"></script>
+  <script src="js/userControls/makeRiem/makegoAway.js"></script>
+  
+  <script src="js/userControls/readRiem/viewRiemButton.js"></script>
+  <script src="js/userControls/readRiem/showRiembursementsPage.js"></script>
+  <script src="js/userControls/readRiem/populateTable.js"></script>
+  <script src="js/userControls/readRiem/goback2.js"></script>
+  <script src="js/userControls/emplist/data.js"></script>
+<script src="js/userControls/emplist/goback3.js"></script>
+
+</body>
+
+</html>

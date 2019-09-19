@@ -1,0 +1,67 @@
+
+
+h1 {
+  
+    text-align: center;
+    background-color: aqua;
+    margin:auto;
+}
+h2 {
+    position:relative;
+    text-align: center;
+}
+  
+
+h3 {
+    text-align: center;
+
+}
+
+#phoneScreen{
+    display:none;
+}
+
+form {
+    text-align: center;
+
+}
+
+#searchterm {
+    
+
+   text-align: center;
+   width: 6em;
+   margin-right: 1em;
+   margin-top: 0.4em;
+
+}
+
+body {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+
+    h1{
+        background-color:green;
+    }
+
+    #phoneScreen{
+        display: block;
+        text-align:center;
+        font-size:10vw;
+        margin:auto;
+        color: white;
+        background-color: black;
+    }
+
+    #formStuff{
+        display:none;
+    }
+
+
+} 

@@ -1,0 +1,101 @@
+[debug] [2019-03-11T08:31:51.513Z] ----------------------------------------------------------------------
+[debug] [2019-03-11T08:31:51.516Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-11T08:31:51.517Z] CLI Version:   6.4.0
+[debug] [2019-03-11T08:31:51.517Z] Platform:      win32
+[debug] [2019-03-11T08:31:51.517Z] Node Version:  v8.11.3
+[debug] [2019-03-11T08:31:51.517Z] Time:          Mon Mar 11 2019 02:31:51 GMT-0600 (Mountain Daylight Time)
+[debug] [2019-03-11T08:31:51.517Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-11T08:31:51.533Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-11T08:31:51.534Z] > authorizing via signed-in user
+[debug] [2019-03-11T08:31:51.534Z] [iam] checking project zeta-bonfire-233620 for permissions ["firebase.projects.get"]
+[debug] [2019-03-11T08:31:51.535Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/zeta-bonfire-233620:testIamPermissions  
+
+[debug] [2019-03-11T08:31:51.954Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-11T08:31:51.956Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/zeta-bonfire-233620  
+ 
+[debug] [2019-03-11T08:31:52.289Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\xampp\htdocs\firebaseauth\stripes'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-03-11T08:31:53.633Z] Fetching environment
+[debug] [2019-03-11T08:31:53.636Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1013344262438:getServerAppConfig  
+ 
+[debug] [2019-03-11T08:31:53.636Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1013344262438/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-11T08:31:53.922Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-11T08:31:53.923Z] Starting @google-cloud/functions-emulator
+[debug] [2019-03-11T08:31:54.083Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-03-11T08:31:55.973Z] Parsing function triggers
+[warn] !  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2019-03-11T08:31:56.331Z] Error during trigger parsing:  Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[warn] !  functions: Error from emulator. Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[debug] [2019-03-11T08:31:56.332Z] 
+[debug] [2019-03-11T08:36:48.077Z] ----------------------------------------------------------------------
+[debug] [2019-03-11T08:36:48.080Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-11T08:36:48.080Z] CLI Version:   6.4.0
+[debug] [2019-03-11T08:36:48.080Z] Platform:      win32
+[debug] [2019-03-11T08:36:48.081Z] Node Version:  v8.11.3
+[debug] [2019-03-11T08:36:48.081Z] Time:          Mon Mar 11 2019 02:36:48 GMT-0600 (Mountain Daylight Time)
+[debug] [2019-03-11T08:36:48.081Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-11T08:36:48.091Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-11T08:36:48.092Z] > authorizing via signed-in user
+[debug] [2019-03-11T08:36:48.092Z] [iam] checking project zeta-bonfire-233620 for permissions ["firebase.projects.get"]
+[debug] [2019-03-11T08:36:48.094Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/zeta-bonfire-233620:testIamPermissions  
+
+[debug] [2019-03-11T08:36:48.501Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-11T08:36:48.503Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/zeta-bonfire-233620  
+ 
+[debug] [2019-03-11T08:36:48.847Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\xampp\htdocs\firebaseauth\stripes'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-03-11T08:36:49.627Z] Fetching environment
+[debug] [2019-03-11T08:36:49.630Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1013344262438:getServerAppConfig  
+ 
+[debug] [2019-03-11T08:36:49.631Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1013344262438/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-11T08:36:49.898Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-11T08:36:49.898Z] Starting @google-cloud/functions-emulator
+[debug] [2019-03-11T08:36:49.982Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5005
+[debug] [2019-03-11T08:36:51.946Z] Parsing function triggers
+[warn] !  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2019-03-11T08:36:52.273Z] Error during trigger parsing:  Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[warn] !  functions: Error from emulator. Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[debug] [2019-03-11T08:36:52.276Z] 
+[debug] [2019-03-11T20:34:38.905Z] Error: kill ENOSYS
+    at Object._errnoException (util.js:992:11)
+    at process.kill (internal/process.js:183:18)
+    at process.listener (C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at emitNone (events.js:106:13)
+    at process.emit (events.js:208:7)
+    at processEmit (C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:155:32)
+    at Signal.wrap.onsignal (internal/process.js:208:44)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-03-11T20:34:40.335Z] Error: kill ENOSYS
+    at Object._errnoException (util.js:992:11)
+    at process.kill (internal/process.js:183:18)
+    at process.listener (C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at emitNone (events.js:106:13)
+    at process.emit (events.js:208:7)
+    at processEmit (C:\Users\akili\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:155:32)
+    at Signal.wrap.onsignal (internal/process.js:208:44)
+[error] 
+[error] Error: An unexpected error has occurred.

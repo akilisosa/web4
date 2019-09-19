@@ -1,0 +1,8 @@
+this is the user thing https://707277074539.signin.aws.amazon.com/console
+
+username : adminAkili
+
+access key : AKIA2JLH7WBV4SGD7GKH
+
+secret key : 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
+
